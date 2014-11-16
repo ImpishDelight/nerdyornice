@@ -514,7 +514,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 
-.main-header:not(.under):not(.nice):not(.nerdy):not(.loo) .main-nav .home,
+body:not(.post-template) .main-header:not(.under):not(.nice):not(.nerdy):not(.loo) .main-nav .home,
 .under .main-nav .under,
 .ncie .main-nav .nice,
 .loo .main-nav .loo,
@@ -550,8 +550,8 @@ margin on the iframe, cause it breaks stuff. */
 	transform: translateX(-20px) translateY(-1.5px);
 }
 
-.main-header:not(.under):not(.nice):not(.nerdy):not(.loo) .main-nav .home::before,
-.main-header:not(.under):not(.nice):not(.nerdy):not(.loo) .main-nav .home::after,
+body:not(.post-template) .main-header:not(.under):not(.nice):not(.nerdy):not(.loo) .main-nav .home::before,
+body:not(.post-template) .main-header:not(.under):not(.nice):not(.nerdy):not(.loo) .main-nav .home::after,
 .under .main-nav .under::before,
 .under .main-nav .under::after,
 .nice .main-nav .nice::before,
