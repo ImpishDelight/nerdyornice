@@ -1,0 +1,26 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="main-header {{tag.name}} {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    {{> "nav"}}
+    <div class="vertical">
+        <div class="inner">
+            {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+{{title}}
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+    <div class="row">
+        <div class="desktop-10 tablet-5 mobile-3 centered">
+
+            {{! The tag below includes the post loop - partials/loop.hbs }}
+            {{> "loop"}}
+
+        </div>
+    </div>
+</main>
