@@ -37,7 +37,7 @@ html {
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; background: #FAFFFA; }
+body { margin: 0; background: #FAFFFA; -webkit-font-smoothing: antialiased; }
 a { background: transparent; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
@@ -73,8 +73,24 @@ fieldset {
    padding: 0.35em 0.625em 0.75em;
 }
 legend { border: 0; padding: 0; }
-button, input, select,
-textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, 
+input, 
+select,
+textarea { 
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #7A2824;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
 button, input { line-height: normal; }
 button, select { text-transform: none; }
 button, html input[type="button"],
@@ -98,6 +114,21 @@ input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
 table { border-collapse: collapse; border-spacing: 0; }
 strong { color: #7A2824; }
+
+.mc-field-group {
+    width: 100%;
+    text-align: center;
+}
+input[type="email"] {
+    box-shadow: none;
+    outline-color: white;
+    text-transform: none;
+    font-weight: 100;
+}
+#mc-embedded-subscribe {
+    background: #DD574B;
+    color: white;
+}
 
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes

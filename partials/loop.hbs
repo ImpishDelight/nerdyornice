@@ -5,7 +5,7 @@
 
 {{! This is the post loop - each post will be output using this markup }}
 <div class="row gifts">
-    {{#foreach posts columns=3}}
+    {{#foreach posts columns=9}}
         {{#if featured}}
 
             <article class="{{post_class}} {{#if @rowStart}}desktop-12 tablet-6 mobile-3{{else}}desktop-6 tablet-3 mobile-3{{/if}}">
@@ -25,3 +25,23 @@
 
 {{! Previous/next page links - displayed on every page }}
 {{pagination}}
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//himandher.us7.list-manage.com/subscribe/post?u=13ace5690cea053a6fa54372b&amp;id=bc95f459ce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+	<input type="email" value="" placeholder="nerdy@nice.com" name="EMAIL" class="required email" id="mce-EMAIL">
+    <input type="submit" value="Stay Up To Date!" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_13ace5690cea053a6fa54372b_bc95f459ce" tabindex="-1" value=""></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
